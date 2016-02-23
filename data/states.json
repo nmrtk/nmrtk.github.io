@@ -1,0 +1,322 @@
+ [{
+     "name": "All India",
+     "values": {
+         "Population Density": 368,
+         "Sex Ratio": 943,
+         "Literacy Rate (%)": 74,
+         "Gender Gap in Literacy (%)": 16.7,
+         "Infant Mortality Rate": 40,
+         "Households with latrine (%)": 46.9,
+         "Safe Drinking Water (%)": 85.5
+     },
+     "color": "darkblue",
+     "strokeWidth": 3
+ }, {
+     "name": "Andhra Pradesh",
+     "values": {
+         "Population Density": 308,
+         "Sex Ratio": 993,
+         "Literacy Rate (%)": 67.7,
+         "Gender Gap in Literacy (%)": 15.8,
+         "Infant Mortality Rate": 39,
+         "Households with latrine (%)": 49.6,
+         "Safe Drinking Water (%)": 90.5
+     }
+ }, {
+     "name": "Arunachal Pradesh",
+     "values": {
+         "Population Density": 17,
+         "Sex Ratio": 938,
+         "Literacy Rate (%)": 67,
+         "Gender Gap in Literacy (%)": 14.1,
+         "Infant Mortality Rate": 32,
+         "Households with latrine (%)": 62,
+         "Safe Drinking Water (%)": 78.6
+     }
+ }, {
+     "name": "Assam",
+     "values": {
+         "Population Density": 398,
+         "Sex Ratio": 958,
+         "Literacy Rate (%)": 73.2,
+         "Gender Gap in Literacy (%)": 11.5,
+         "Infant Mortality Rate": 54,
+         "Households with latrine (%)": 64.9,
+         "Safe Drinking Water (%)": 69.9
+     }
+ }, {
+     "name": "Bihar",
+     "values": {
+         "Population Density": 1106,
+         "Sex Ratio": 918,
+         "Literacy Rate (%)": 63.8,
+         "Gender Gap in Literacy (%)": 20.1,
+         "Infant Mortality Rate": 42,
+         "Households with latrine (%)": 23.1,
+         "Safe Drinking Water (%)": 94
+     }
+ }, {
+     "name": "Chhattisgarh",
+     "values": {
+         "Population Density": 189,
+         "Sex Ratio": 991,
+         "Literacy Rate (%)": 71,
+         "Gender Gap in Literacy (%)": 20.9,
+         "Infant Mortality Rate": 46,
+         "Households with latrine (%)": 24.6,
+         "Safe Drinking Water (%)": 86.3
+     }
+ }, {
+     "name": "Goa",
+     "values": {
+         "Population Density": 394,
+         "Sex Ratio": 973,
+         "Literacy Rate (%)": 87.4,
+         "Gender Gap in Literacy (%)": 11,
+         "Infant Mortality Rate": 9,
+         "Households with latrine (%)": 79.7,
+         "Safe Drinking Water (%)": 85.7
+     }
+ }, {
+     "name": "Gujarat",
+     "values": {
+         "Population Density": 308,
+         "Sex Ratio": 919,
+         "Literacy Rate (%)": 79.3,
+         "Gender Gap in Literacy (%)": 16.5,
+         "Infant Mortality Rate": 36,
+         "Households with latrine (%)": 57.4,
+         "Safe Drinking Water (%)": 90.3
+     }
+ }, {
+     "name": "Haryana",
+     "values": {
+         "Population Density": 573,
+         "Sex Ratio": 879,
+         "Literacy Rate (%)": 76.6,
+         "Gender Gap in Literacy (%)": 18.6,
+         "Infant Mortality Rate": 41,
+         "Households with latrine (%)": 68.6,
+         "Safe Drinking Water (%)": 93.8
+     }
+ }, {
+     "name": "Himachal",
+     "values": {
+         "Population Density": 123,
+         "Sex Ratio": 972,
+         "Literacy Rate (%)": 83.8,
+         "Gender Gap in Literacy (%)": 14.2,
+         "Infant Mortality Rate": 35,
+         "Households with latrine (%)": 69.1,
+         "Safe Drinking Water (%)": 93.7
+     }
+ }, {
+     "name": "J & K",
+     "values": {
+         "Population Density": 56,
+         "Sex Ratio": 889,
+         "Literacy Rate (%)": 68.7,
+         "Gender Gap in Literacy (%)": 20.3,
+         "Infant Mortality Rate": 37,
+         "Households with latrine (%)": 51.2,
+         "Safe Drinking Water (%)": 76.8
+     }
+ }, {
+     "name": "Jharkhand",
+     "values": {
+         "Population Density": 414,
+         "Sex Ratio": 949,
+         "Literacy Rate (%)": 67.6,
+         "Gender Gap in Literacy (%)": 22.2,
+         "Infant Mortality Rate": 37,
+         "Households with latrine (%)": 22,
+         "Safe Drinking Water (%)": 60.1
+     }
+ }, {
+     "name": "Karnataka",
+     "values": {
+         "Population Density": 319,
+         "Sex Ratio": 963,
+         "Literacy Rate (%)": 75.6,
+         "Gender Gap in Literacy (%)": 14.7,
+         "Infant Mortality Rate": 31,
+         "Households with latrine (%)": 51.2,
+         "Safe Drinking Water (%)": 87.5
+     }
+ }, {
+     "name": "Kerala",
+     "values": {
+         "Population Density": 860,
+         "Sex Ratio": 1084,
+         "Literacy Rate (%)": 93.9,
+         "Gender Gap in Literacy (%)": 4,
+         "Infant Mortality Rate": 12,
+         "Households with latrine (%)": 95.2,
+         "Safe Drinking Water (%)": 33.5
+     }
+ }, {
+     "name": "Madhya Pradesh",
+     "values": {
+         "Population Density": 236,
+         "Sex Ratio": 931,
+         "Literacy Rate (%)": 70.6,
+         "Gender Gap in Literacy (%)": 20.5,
+         "Infant Mortality Rate": 54,
+         "Households with latrine (%)": 28.8,
+         "Safe Drinking Water (%)": 78
+     }
+ }, {
+     "name": "Maharashtra",
+     "values": {
+         "Population Density": 365,
+         "Sex Ratio": 929,
+         "Literacy Rate (%)": 82.9,
+         "Gender Gap in Literacy (%)": 14.3,
+         "Infant Mortality Rate": 24,
+         "Households with latrine (%)": 53.1,
+         "Safe Drinking Water (%)": 83.4
+     }
+ }, {
+     "name": "Manipur",
+     "values": {
+         "Population Density": 128,
+         "Sex Ratio": 992,
+         "Literacy Rate (%)": 79.9,
+         "Gender Gap in Literacy (%)": 13.3,
+         "Infant Mortality Rate": 10,
+         "Households with latrine (%)": 89.3,
+         "Safe Drinking Water (%)": 45.4
+     }
+ }, {
+     "name": "Meghalaya",
+     "values": {
+         "Population Density": 132,
+         "Sex Ratio": 989,
+         "Literacy Rate (%)": 75.5,
+         "Gender Gap in Literacy (%)": 3.4,
+         "Infant Mortality Rate": 47,
+         "Households with latrine (%)": 62.9,
+         "Safe Drinking Water (%)": 44.7
+     }
+ }, {
+     "name": "Mizoram",
+     "values": {
+         "Population Density": 52,
+         "Sex Ratio": 976,
+         "Literacy Rate (%)": 91.6,
+         "Gender Gap in Literacy (%)": 4.3,
+         "Infant Mortality Rate": 35,
+         "Households with latrine (%)": 91.9,
+         "Safe Drinking Water (%)": 60.4
+     }
+ }, {
+     "name": "Nagaland",
+     "values": {
+         "Population Density": 119,
+         "Sex Ratio": 931,
+         "Literacy Rate (%)": 80.1,
+         "Gender Gap in Literacy (%)": 6.6,
+         "Infant Mortality Rate": 18,
+         "Households with latrine (%)": 76.5,
+         "Safe Drinking Water (%)": 53.8
+     }
+ }, {
+     "name": "Odisha",
+     "values": {
+         "Population Density": 270,
+         "Sex Ratio": 979,
+         "Literacy Rate (%)": 73.5,
+         "Gender Gap in Literacy (%)": 18,
+         "Infant Mortality Rate": 51,
+         "Households with latrine (%)": 22,
+         "Safe Drinking Water (%)": 75.3
+     }
+ }, {
+     "name": "Punjab",
+     "values": {
+         "Population Density": 551,
+         "Sex Ratio": 895,
+         "Literacy Rate (%)": 76.7,
+         "Gender Gap in Literacy (%)": 10.1,
+         "Infant Mortality Rate": 26,
+         "Households with latrine (%)": 79.3,
+         "Safe Drinking Water (%)": 97.6
+     }
+ }, {
+     "name": "Rajasthan",
+     "values": {
+         "Population Density": 200,
+         "Sex Ratio": 928,
+         "Literacy Rate (%)": 67.1,
+         "Gender Gap in Literacy (%)": 27.9,
+         "Infant Mortality Rate": 47,
+         "Households with latrine (%)": 35,
+         "Safe Drinking Water (%)": 78.1
+     }
+ }, {
+     "name": "Sikkim",
+     "values": {
+         "Population Density": 86,
+         "Sex Ratio": 890,
+         "Literacy Rate (%)": 82.2,
+         "Gender Gap in Literacy (%)": 10.9,
+         "Infant Mortality Rate": 22,
+         "Households with latrine (%)": 87.2,
+         "Safe Drinking Water (%)": 85.3
+     }
+ }, {
+     "name": "Tamil Nadu",
+     "values": {
+         "Population Density": 555,
+         "Sex Ratio": 996,
+         "Literacy Rate (%)": 80.3,
+         "Gender Gap in Literacy (%)": 13,
+         "Infant Mortality Rate": 21,
+         "Households with latrine (%)": 48.3,
+         "Safe Drinking Water (%)": 92.5
+     }
+ }, {
+     "name": "Tripura",
+     "values": {
+         "Population Density": 350,
+         "Sex Ratio": 960,
+         "Literacy Rate (%)": 87.8,
+         "Gender Gap in Literacy (%)": 9,
+         "Infant Mortality Rate": 26,
+         "Households with latrine (%)": 86,
+         "Safe Drinking Water (%)": 67.5
+     }
+ }, {
+     "name": "Uttar Pradesh",
+     "values": {
+         "Population Density": 829,
+         "Sex Ratio": 912,
+         "Literacy Rate (%)": 69.7,
+         "Gender Gap in Literacy (%)": 20,
+         "Infant Mortality Rate": 50,
+         "Households with latrine (%)": 35.7,
+         "Safe Drinking Water (%)": 95.1
+     }
+ }, {
+     "name": "Uttarakhand",
+     "values": {
+         "Population Density": 189,
+         "Sex Ratio": 963,
+         "Literacy Rate (%)": 79.6,
+         "Gender Gap in Literacy (%)": 17.6,
+         "Infant Mortality Rate": 32,
+         "Households with latrine (%)": 65.8,
+         "Safe Drinking Water (%)": 92.2
+     }
+ }, {
+     "name": "West Bengal",
+     "values": {
+         "Population Density": 1028,
+         "Sex Ratio": 950,
+         "Literacy Rate (%)": 77.1,
+         "Gender Gap in Literacy (%)": 11.5,
+         "Infant Mortality Rate": 31,
+         "Households with latrine (%)": 58.9,
+         "Safe Drinking Water (%)": 92.2
+     }
+ }]

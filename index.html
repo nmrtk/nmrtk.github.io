@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="There are many factors that influence infant mortality. This is a simple analysis correlating some of the important factors.">
+    <meta name="author" content="Namrata Kamat">
+
+    <title>Infant mortality in India - factors and correlations</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link href="css/nv.d3.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body onresize="resizeCharts()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand" href="/">Infant Mortality in India</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/baby.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>An attempt to understand factors influencing infant mortality in India</h1>
+                        <h2 class="subheading">by correlating some of the important factors and visualizing the results</h2>
+                        <span class="meta">Posted by Namrata Kamat on February 22, 2016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+
+                <div id="inner-shell" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 class="section-heading">Introduction</h2>
+                    <p>The joy of giving birth and bringing a new life into the world cannot be expressed in words. Unfortunately, this joy is short-lived for some of us. Infant mortality is one of those preventable problems that is still not completely prevented. While a lot of good people are working towards solving this and saving lives, I wanted to start doing my bit with the help of some tools I have recently learnt to approach social issues from the data analytics side. So I spent this weekend making these correlations and visualizations to analyse infant mortality in India. Hope this post helps broaden/deepen your understanding of this problem. So lets get into it and see how some of the factors correlate with this problem.</p>
+
+
+                <h2 class="section-heading">Infant mortality in India</h2>
+                
+                    <p>India has seen a consistent decrease in infant mortality rate over the last two and half decades. India's overall IMR (Infant mortality rate) declined by 70% from 139 deaths per 1000 births to 42 deaths per 1000 births. While infant mortality rates are showing a declining trend and have dropped across states over the years, there still remains a lot of variability across the states. For instance, in 2012, the IMR in Kerala was nearly 5 times lower than that of Madhya Pradesh.</p>
+
+                    <p>There are many factors that can influence IMR. Let's look at some of the 'obvious' looking factors and analyse the correlation. Here are the factors that are analysed in this post:
+                    <ul>
+                        <li><b>Literacy</b>: if more people are educated, more people will deal with pregnancy and child birth in better ways</li>
+                        <li><b>Urban vs Rural</b>: one would expect that urban regions must be much much better than rural regions, lets look into this</li>
+                        <li><b>Types of IMR</b>: lets look at types of IMR and still births</li>
+                        <li><b>Maternal mortality</b>: comparing IMR and maternal mortality</li>
+                        <li><b>Institutional deliveries</b>: how much of an impact do institutional deliveries have?</li>
+                        <li><b>More socioeconomic factors</b>: a general exploratory comparison of some more socioeconomic factors</li>
+                    </ul>                    
+                    </p>
+
+                    <h3>Literacy</h3>
+
+                    <p>One of the important factors that seems to be well correlated with IMR is literacy rate. The hypothesis behind this is simple -- if more people are educated, more people will deal with pregnancy in a better way. The following visualization is a bubble motion chart that indicates the correlation between IMR and literacy rate. <i>(side note: you should watch this <a href="https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen?language=en">TED talk by Hans Rosling</a>. That's where I got the inspiration for this visualization.)</i></p>
+
+                    <p>How this visualization works:
+                        <ul>
+                            <li>You can scroll through years by scrolling on the year (just hover your mouse over the year in the chart and move it a bit to see how this works)</li>
+                            <li>Each bubble represents an entity, in this case each bubble is a state</li>
+                            <li>The size of the bubbles is proportional to the population of the respective states</li>
+                            <li>States are also grouped by region (<div class="legend-circle north"></div>Northern, <div class="legend-circle south"></div>Southern, <div class="legend-circle east"></div>Eastern, <div class="legend-circle west"></div>Western and <div class="legend-circle northeast"></div>Northeastern)</li>
+                            <li>Click the <i>replay animation</i> button to restart the animation</li>
+                        </ul>
+                    </p>
+
+                    <h4>Correlating infant mortality and literacy rate</h4>
+                    <button type="button" class="btn btn-default replay-btn" onclick="IMRvsLiteracyReplay()">
+                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> replay animation
+                    </button>
+
+                    <div id="chart"></div>
+
+                    <p>As we can see in the motion chart, there seems to be a strong correlation between literacy rate and IMR. The <a href="https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient">correlation coefficient</a>, or commonly known as the R value comes out to a decent -0.71, indicating a negative correlation as expected.</p>
+
+
+                    <h3>How do rural regions compare against urban regions?</h3>
+
+                    <p>Lets now look at what types of infant mortality cases are seen in rural vs urban areas. For this, we have a pretty interactive <i>sunburst</i> visualization, that lets you zoom in and out to analyse each data sector. Go ahead and play with it to see how rural and urban regions compare.</p>
+
+                    <p>How the sunburst visualization works:
+                        <ul>
+                            <li>Data is segregated into multiple layers, rural vs. urban, by state, year, and type of infant mortality</li>
+                            <li>Hover on any sector to see what it indicates</li>
+                            <li>You can see more granular data for any sector by clicking on it</li>
+                            <li>Click the <i>reset zoom level</i> button to go back to the starting position</li>
+                        </ul>
+                    </p>
+
+                    <h4>Urban vs Rural and comparing infant mortality types</h4>
+                    <button type="button" class="btn btn-default replay-btn" onclick="IMRsunburstReplay()">
+                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> reset zoom level
+                    </button>
+                    <div id="chart3" class="sunburst"></div>
+
+                    <p>The infant mortality rates in rural areas are almost twice as high as urban areas. Moreover, the number of cases of infant mortality in early neonatal period (0-7 days of birth) is very high in rural areas.</p>
+
+                    <h3>Maternal mortality</h3>
+
+                    <p>A lot of unfortunate infant mortalities may be attributed to the delivery procedure and conditions surrounding that delicate phase. In order to look into this, lets compare infant mortality and maternal mortality across states and over time.</p>
+                    <p>To add to it, lets also look at the literacy rates to explore this further. Here're some pointers on the visualization:</p>
+                    <ul>
+                        <li>Each bubble represents a state, and size indicates population</li>
+                        <li>Color indicates literacy rate ranging from yellow (45% literacy rate <div class="legend-circle" style="background-color: yellow"></div>) to red (95% literacy rate <div class="legend-circle" style="background-color: red"></div>)</li>
+                    </ul>
+
+                    <h4>Infant mortality vs. maternal mortality (along with literacy rate)</h4>
+                    <button type="button" class="btn btn-default replay-btn" onclick="IMRvsMMRReplay()">
+                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> replay animation
+                    </button>
+                    <div id="chart2"></div>
+
+                    <p>Although maternal mortality data is available only for a few years, for the data that we have, we see a very strong correlation between infant mortality and maternal mortality with a correlation coefficient, or R value of 0.93. Also, the relation between literacy rate and both IMR/MMR is clearly visible.</p>
+
+                    <h3>Institutional deliveries</h3>
+                    <p>Lets now compare institutional deliveries and IMR across states and over multiple years. We'll use a scatter plot for this purpose. Here's some information on the plot:</p>
+                    <ul>
+                        <li>the x-axis shows percentage of institutional deliveries</li>
+                        <li>size of the point in the plot is proportional to literacy rate in the region</li>
+                        <li>colors indicate different years</li>
+                        <li>you can show/hide certain years by clicking on the small circle next to the year (top right legend)</li>
+                        <li>the lines are representatives of the trends for respective years</li>
+                    </ul>
+
+                    <h4>Incidence of infant mortality in institutional deliveries vs non-institutional deliveries</h4>
+
+                    <div id="chart4" class="chartWrap">
+                        <svg></svg>
+                    </div>
+
+                    <p>As expected, there is a negative between institutional deliveries and IMR, however, the correlation values are pretty low ranging from 0.4 to 0.47 for all the years. This surprised me a little, because I thought that institutional deliveries should have far lesser incidences of infant mortality than non-institutional ones. Let's explore some more socioeconomic indicators in the next section.</p>
+
+                    <h3>Other socioeconomic factors</h3>
+                    <p>We explored some of the obvious factors that can affect IMR. Let us now look at how some other socioeconomic factors correlate with IMR. We'll compare states by population density, sex ratio, gender gap in literacy, households with latrines and safe drinking water. We'll use another interactive visualization for this -- a parallel co-ordinates graph. Go ahead and play with it to see how states compare on these factors.</p>
+
+                    <p>Interacting with the visualization:</p>
+                    <ul>
+                        <li>Each line represents a state, hover over any line to see details</li>
+                        <li>There are many factors, but you can selectively turn on or off certain factors</li>
+                        <li>The thick blue line represents country level metrics and can be used as a reference for comparison</li>
+                    </ul>
+
+                    <h4>Comparing states on various socioeconomic factors</h4>
+                    <div id="chart5">
+                        <svg></svg>
+                    </div>
+
+                    <p>Clearly, there's a lot of variation in the socioeconomic factors. I had a good time comparing states and figuring out various correlations. Among all these, the one that correlates the best with infant mortality rates is <b>% of households with latrines</b>! The R value for the correlation is 0.69. This is followed by % gender gap in literacy (R value 0.52). Surprisingly, population density and safe drinking water have weak or no correlation with IMR.</p>
+
+                    <h3>Conclusion</h3>
+                    <p>Although the analysis does shed some light on how IMR correlates with different factors, this is just a simple correlation analysis without digging into the problem deeper. It'd be interesting to figure out which of the factors are causal and what is the cause-effect relation.
+                    </p>
+                    <p>
+                    I was definitely surprised by the strong correlation of latrines and IMR. Maybe they are connected? We'll need to look into it some more to figure out the connection. Lets pick it up some other time.
+                    </p>
+                    <p>Thanks to Sagar for reading drafts of this. A huge thanks to the Indian government for making so much data publicly available. Needless to say this post would have taken weeks/months without the work that the d3 community has put in. And without the nice folks at github, this post would be still on my computer.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted"><i>The mind is not a vessel to be filled but a fire to be kindled. - Plutarch</i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="js/nv.d3.min.js"></script>
+
+    <script src="js/InfantMortality.js"></script>
+
+
+</body>
+
+</html>

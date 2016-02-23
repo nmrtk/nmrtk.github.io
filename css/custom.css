@@ -1,0 +1,112 @@
+#chart {
+    height: 500px;
+    margin-top: 30px;
+}
+
+.sunburst path {
+    stroke: #fff;
+}
+
+#chart4 svg {
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+    width: 100%;
+}
+
+#chart5 {
+    margin-top: 30px;
+    margin-left: -5%;
+}
+
+#chart5 .nvd3 text {
+    font-size: 10px;
+}
+
+#chart5 svg {
+    margin: 0px;
+    padding: 0px;
+    width: 110%;
+    height: 600px;
+}
+
+#tooltip3 {
+    text-align: center;
+}
+
+text {
+    font: 10px sans-serif;
+}
+
+.dot {
+    /*stroke: #000;*/
+    opacity: 0.9;
+}
+
+.label {
+    fill: #777;
+}
+
+.year.label {
+    font: 500 130px "Helvetica Neue";
+    fill: #ddd;
+}
+
+.year.label.active {
+    fill: #aaa;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+    cursor: ew-resize;
+}
+
+.axis path {
+    display: none;
+}
+
+.axis line {
+    shape-rendering: crispEdges;
+    stroke: gray;
+}
+
+.axis .minor line {
+    stroke: gray;
+    stroke-dasharray: 2, 2;
+}
+
+.replay-btn {
+  text-transform: uppercase;
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  border-radius: 2px !important;
+  padding: 5px 8px !important;
+}
+
+.legend-circle{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.legend-circle.east {
+    background-color: #DB5E56;
+}
+
+.legend-circle.north {
+    background-color: #566FDB;
+}
+
+.legend-circle.west {
+    background-color: #56DB7F;
+}
+
+.legend-circle.south {
+    background-color: #DBC256;
+}
+
+.legend-circle.northeast {
+    background-color: #DB56B2;
+}
